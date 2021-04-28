@@ -1,0 +1,20 @@
+.logo {
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 1;
+
+    // .line-bottom::after{
+    //     left: -4px;
+    //     bottom: 1px;
+    //     width: 112%;
+    // }
+
+    .border-grad {
+        background-position: center bottom 8px;
+        background-size: 100% 10px;
+    }
+}
+
+.logo__link{
+    color: $texr;
+}

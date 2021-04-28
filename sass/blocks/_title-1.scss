@@ -1,0 +1,24 @@
+.title-1 {
+    line-height: 1.2;
+    font-family: 'Mplus 1p ExtraBold';
+    font-size: 90px;
+
+    /* Tablet */
+     @media (max-width: 991px) {
+         font-size: 52px;
+
+         & .border-grad {
+            background-position: center bottom 11px;
+        }
+     }
+
+     /* Mobile */
+     @media (max-width: 767px) {
+        font-size: 42px;
+
+        & .border-grad {
+            background-position: center bottom 7px;
+        }
+     }
+
+}

@@ -1,0 +1,32 @@
+//Base
+@import "./base/vars";
+@import "./base/base";
+
+
+// Section
+@import "./section/header";
+@import "./section/section-portfolio";
+@import "./section/section-timeline";
+@import "./section/contacts";
+@import "./section/footer";
+
+// Blocks
+@import "./blocks/header-top";
+@import "./blocks/header-fix";
+@import "./blocks/logo";
+@import "./blocks/gamburger";
+@import "./blocks/mobil-menu";
+@import "./blocks/line-bottom";
+@import "./blocks/header-author";
+@import "./blocks/title-1";
+@import "./blocks/border-grad";
+@import "./blocks/button";
+@import "./blocks/header-img";
+@import "./blocks/header-skills";
+@import "./blocks/show-project-cards";
+@import "./blocks/title-3";
+@import "./blocks/social-block";
+@import "./blocks/email-link";
+@import "./blocks/title-2";
+@import "./blocks/project-card";
+@import "./blocks/form";

@@ -1,0 +1,29 @@
+.header-img {
+    max-width: 1600px;
+    margin-top: -129px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    transform: scale(1);
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-top: -55px;
+    }
+
+    /* Tablet */
+    @media (max-width: 767px) {
+        margin-top: 40px;
+        margin-bottom: 76px;
+        transform: scale(1.2);
+    }
+
+    /* Mobil */
+    @media (max-width: 575px) {
+        transform: scale(1.5);
+    }
+
+    @media (max-width: 425px) {
+        transform: scale(1.8);
+    }
+}

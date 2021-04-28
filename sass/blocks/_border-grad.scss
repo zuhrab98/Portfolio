@@ -1,0 +1,7 @@
+.border-grad {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 23px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, rgb(255, 191, 54), $line);
+}

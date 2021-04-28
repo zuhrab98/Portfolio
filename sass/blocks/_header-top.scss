@@ -1,0 +1,125 @@
+.header-top {
+    margin-bottom: 176px;
+    height: 109px;
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 72px;
+        
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 36px;
+    }
+
+}
+
+.header-top__container {
+    max-width: 1430px;
+    height: 109px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $texr;
+
+    // /* Tablet */
+    // @media (max-width: 991px) {
+    //     background: #fff;
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 9;
+    // }
+}
+
+// .header-top__container.header-top--active {
+//     top: -150px;
+//     // width: 0;
+// }
+
+.header-nav {
+    font-weight: 700;
+    font-size: 20px;
+    transition: .7s;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.header-nav__list {
+    display: flex;
+    
+    /* Tablet */
+    @media (max-width:991px) {
+        flex-direction: column;
+    }
+
+    & a{
+        position: relative;
+        color: $texr;
+        z-index: 2;
+        
+    }
+
+    & a:focus {
+        outline: 2px dotted $btnHover;
+    }
+
+    .border-grad {
+        background-position: center bottom 4px;
+        background-size: 0% 5px;
+        transition: .3s;
+    }
+
+
+    & .border-grad:hover {
+        background-size: 100% 5px;
+    }
+}
+
+.header-nav__list li:not(:last-child) {
+    margin-right: 81px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+}
+.header-social .fab {
+    font-size: 30px;
+    color: $texr;
+    transition: color .2s ease-in;
+}
+
+.header-social {
+    /* Tablet */
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.header-social .fa-telegram-plane:hover {
+    color: #0077b5;
+}
+
+.header-social .fa-github:hover {
+    color: #6cc644;
+}
+
+
+.header-social .fa-vk:hover {
+    color: #45668e;
+}
+
+.header-social a:not(:last-child){
+    margin-right: 20px;
+    
+}

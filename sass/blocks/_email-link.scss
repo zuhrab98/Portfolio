@@ -1,0 +1,19 @@
+.email-link {
+    line-height: 1;
+}
+
+.email-link a{
+    color: $texr;
+    border-bottom: 1px solid #000;
+    transition: .2s;
+
+    &:hover {
+        color: #039be5;
+        border-bottom: 1px solid #039be5;
+    }
+
+    &:active {
+        color: #ea655f;
+        border-bottom: 1px solid #ea655f;
+    }
+}

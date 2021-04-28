@@ -1,0 +1,101 @@
+//   .header-fix {
+//     display: none; 
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     background: #fff;
+//     z-index: 1000;
+//     height: 100px;
+//     animation-name: show_header;
+//     animation-duration: 1s;
+
+
+//   }
+
+// .header-fix.header-fix--active {
+//     display: block;
+
+//     .mobil-menu {
+//         position: fixed;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         max-width: 320px;
+//         width: 100%;
+//         background-color: #fff;
+//         display: flex;
+//         flex-direction: column;
+//         text-align: left;
+
+//         transform: translateX(100%);
+//         opacity: 0;
+
+
+//         &.mobil-menu--active {
+//             padding: 36px 30px;
+//             z-index: 99;
+//             opacity: 1;
+//             transform: translateX(0);
+//             transition: all 0.5s ease-in;
+//         }
+
+//         // отступ между блоками 1 - уровня вложиности
+//         & > * + * {
+//             margin-top: 40px;
+//         }
+
+//         & .email-link a {
+//             color: #039be5;
+//             border-bottom: 1px solid #039be5;
+//         }
+
+//         // отступы между иконками
+//         .social-block > * + *{
+//             margin-left: 20px;
+//         }
+
+//         .header-nav__list {
+//             display: flex;
+//             flex-direction: column;
+//         }
+
+//         .header-nav__list li:not(:last-child) {
+//             margin-right: 0;
+//             margin-bottom: 28px;
+//         }
+
+//         .header-nav__list li a {
+//             font-size: 20px;
+//             border-bottom: 2px solid #111;
+//             font-weight: 700;
+//             line-height: 1.2;
+//             transition: .2s;
+//         }
+//     }
+
+//     .nav-icon {
+//         display: flex;
+//         z-index: 999;
+//         margin-right: 18px;
+//     }
+// }
+
+// @keyframes show_header {
+//     0% {
+//         opacity: 0;
+//         top: -70px;
+//     }
+
+//     100% {
+//         opacity: 1;
+//         top: 0;
+//     }
+// }
+
+// .header-fix__container {
+//     height: 100px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }

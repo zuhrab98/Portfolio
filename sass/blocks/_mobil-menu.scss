@@ -1,0 +1,59 @@
+// Мбильное меню
+.mobil-menu {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .mobil-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 320px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        transform: translateX(100%);
+        opacity: 0;
+
+
+        &.mobil-menu--active {
+            padding: 36px 30px;
+            z-index: 99;
+            opacity: 1;
+            transform: translateX(0);
+            transition: all 0.5s ease-in;
+        }
+
+        // отступ между блоками 1 - уровня вложиности
+        & > * + * {
+            margin-top: 40px;
+        }
+
+        & .email-link a {
+            color: #039be5;
+            border-bottom: 1px solid #039be5;
+        }
+
+        // отступы между иконками
+        .social-block > * + *{
+            margin-left: 20px;
+        }
+
+    }
+
+    // стили для списка навигации
+    .header-nav__list li a {
+        font-size: 20px;
+        border-bottom: 2px solid #111;
+        font-weight: 700;
+        line-height: 1.2;
+        transition: .2s;
+    }
+
+}
+
+

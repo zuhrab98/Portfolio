@@ -1,0 +1,136 @@
+.header-author {
+    position: relative;
+    z-index: 2;
+}
+
+.header-author__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        align-items: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.header-author__content-img {
+    max-width: 460px;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+
+    /* Tablet */
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+// .header-author__content-img::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(90deg, rgb(244,248,249) 0%, rgba(244,248,249,0) 100%);
+//     opacity: 0.502;
+//     top: 130px;
+//     left: 124px;
+//     z-index: -1;
+
+//     /* Tablet */
+//     @media (max-width: 991px) {
+//         top: 20px;
+//         left: 50px;
+//     }
+
+//     /* Mobile */
+//     @media (max-width: 767px) {
+//         top: 20px;
+//         left: 20px;
+//     }
+
+// }
+
+.header-author__content-title {
+    max-width: 570px;
+    width: 50%;
+
+    /* Mobil */
+    @media (max-width: 767px) {
+        max-width: 370px;
+        width: 100%;
+    }
+    
+    & .line-bottom::after {
+        bottom: 7px;
+        width: 102%;
+    }
+
+    & p {
+        font-family: 'Mplus 1p Medium';
+        font-size: 24px;
+        margin-bottom: 36px;
+        color: #393f47;
+
+        a {
+            color:#039be5;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: #02699c;
+        }
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    & p::selection {
+        background: $textBg;
+    }
+
+    & .title-1 {
+        margin-bottom: 35px;
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+            width: 350px;
+
+
+            & .border-grad {
+                background-position: center bottom 11px;
+            }
+
+        }
+
+        /* Tablet */
+        @media (max-width: 767px) {
+            & .border-grad {
+                background-position: center bottom 5px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 575px) {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+.header__button > * + * {
+    margin-left: 20px;
+}

@@ -1,0 +1,140 @@
+.header-skills {
+    padding-top: 150px;
+    margin-top: -150px;
+
+    .social-block {
+        margin-bottom: 34px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    
+        /* Mobile */
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.header-skills__row {
+    display: flex;
+    justify-content: space-between;
+
+    /* Tablet */
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.header-skills__text {
+    width: 54%;
+    max-width: 620px;
+    font-size: 24px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        font-size: 18px;
+        max-width: 370px;
+    }
+    
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    & .title-3 {
+        margin-bottom: 40px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 32px;
+            font-size: 32px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+}
+
+// Список
+.header-skills__list {
+    margin-bottom: 38px;
+
+    & li::selection{
+        background: $textBg;
+    }
+
+    & > * + * {
+        margin-top: 10px;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        & > * + * {
+            margin-top: 12px;
+        }
+    }
+
+}
+
+// Пункты списка
+.header-skills__item {
+    position: relative;
+    padding-left: 31px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        padding-left: 0;
+    }
+}
+
+.header-skills__item::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    background: #000;
+    left: 0px;
+    top: 50%;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.header-skills__connection {
+    font-size: 24px;
+    width: 45%;
+    max-width: 352px;
+    padding-right: 50px;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    & .title-3 {
+        margin-bottom: 47px;
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+}

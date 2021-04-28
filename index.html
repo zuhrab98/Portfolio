@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект Портфолио</title>
+    <link rel="stylesheet" href="fonts/mplus1p/mplus1p.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <!-- overlay -->
+        <div id="overlay"></div>
+
+        <!-- header-top -->
+        <div class="header-top">
+            <div class="header-top__container">
+                <div class="logo">
+                    <a class="logo__link border-grad" href="#">АЗ</a>
+                </div>
+                
+                <!-- Мобильное меню -->
+                <div class="mobil-menu">
+
+                    <div class="logo">
+                        <a class="logo__link border-grad" href="#">АЗ</a>
+                    </div>
+
+                    <ul class="header-nav__list">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#portfolio">Работы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+
+                    <div class="social-block">
+                        <a class="icon__link" href="https://github.com/zuhrab98">
+                            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                                    fill="#212121" />
+                            </svg>
+                        </a>
+
+                        <a class="icon__link" href="http://t.me/zuha_98">
+                            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" fill="#039be5" r="12" />
+                                <path
+                                    d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                                    fill="#fff" />
+                            </svg>
+                        </a>
+
+                        <a class="icon__link" href="https://vk.com/zukhrab96">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196"
+                                style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
+                                <circle style="fill:#4D76A1;" cx="56.098" cy="56.098" r="56.098" />
+                                <g>
+                                    <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                                c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                                c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                                c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                                c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                                c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                                c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                                c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                                c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                                c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                                C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="email-link">
+                        <a href="mailto:email@zuhrab.alibeckov@yandex.ru">zuhrab.alibeckov@yandex.ru</a>
+                    </div>
+
+                </div>
+                <!--// Мобильное меню -->
+
+                <!-- Навигация -->
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="border-grad"><a data-aos="zoom-in" href="index.html">Главная</a></li>
+                        <li class="border-grad"><a data-aos="zoom-in" data-aos-delay="300" href="#portfolio">Работы</a></li>
+                        <li class="border-grad"><a data-aos="zoom-in" data-aos-delay="600" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Иконка гамбургер -->
+                <div class="nav-icon">
+                    <div class="nav-icon__middle"></div>
+                </div>
+
+                <!-- Социальные иконки -->
+                <div class="header-social">
+                    <a href="http://t.me/zuha_98"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://github.com/zuhrab98"><i class="fab fa-github"></i></a>
+                    <a href="https://vk.com/zukhrab96"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--// header-top -->
+
+
+        <!-- Блок с автором -->
+        <div class="header-author">
+            <div class="container">
+                <div class="header-author__content">
+
+                    <div class="header-author__content-img" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="img/header/IMG_8334.jpg" width="460" alt="img">
+                    </div>
+
+                    <div class="header-author__content-title">
+                        <h1 class="title-1" data-aos="fade-right" data-aos-duration="1000">
+                            <span class="border-grad">Зухраб Алибеков</span>
+                        </h1>
+
+                        <p>
+                            Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работ с соблюдением сроков и
+                            выполнением ТЗ. 
+                        </p>
+
+                        <p>
+                            Ссылка на <a href="https://docs.google.com/document/d/1jrQQIii1vLdfofAJpKqMmN_m_Nj9Z3wmQckkiSlVByI/edit">Резюме</a>
+                        </p>
+                        
+                        <div class="header__button">
+                            <a href="#skills" class="button">Познакомиться</a>
+                            <a href="#contacts" class="button button--white">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Блок с автором -->
+
+        <!-- Большая картинка -->
+        <div class="header-img">
+            <img src="./img/bg/big-header.png" alt="big-header">
+        </div>
+
+        <!-- Скиллы -->
+        <div class="header-skills" id="skills">
+            <div class="container">
+                <!-- header-skills__row -->
+                <div class="header-skills__row">
+
+                    <!-- header-skills__text -->
+                    <div class="header-skills__text" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+                        <h3 class="title-3">Что я умею:</h3>
+                        <ul class="header-skills__list">
+                            <li class="header-skills__item">pixel perfect, полное соответствие макету.</li>
+                            <li class="header-skills__item">верстаю с сеткой или без.</li>
+                            <li class="header-skills__item">адаптивная верстка под мобильные устройства.</li>
+                            <li class="header-skills__item">оптимизация под retina экраны</li>
+                            <li class="header-skills__item">с Bootstrap и без него.</li>
+                        </ul>
+                        <a href="#portfolio" class="button">Смотреть работы</a>
+                    </div>
+                    <!--// header-skills__text -->
+
+                    <!-- header-skills__connection -->
+                    <div class="header-skills__connection" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+
+                        <h3 class="title-3">На связи:</h3>
+
+                        <div class="social-block">
+                        
+                            <a class="icon__link" href="https://github.com/zuhrab98">
+                                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                                        fill="#212121" />
+                                </svg>
+                            </a>
+
+                            <a class="icon__link" href="http://t.me/zuha_98">
+                                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" fill="#039be5" r="12" />
+                                    <path
+                                        d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+
+                            <a class="icon__link" href="https://vk.com/zukhrab96">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;"
+                                    xml:space="preserve">
+                                    <circle style="fill:#4D76A1;" cx="56.098" cy="56.098" r="56.098" />
+                                    <g>
+                                        <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                                    c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                                    c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                                    c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                                    c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                                    c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                                    c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                                    c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                                    c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                                    c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                                    C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="email-link">
+                            <a href="mailto:email@zuhrab.alibeckov@yandex.ru">zuhrab.alibeckov@yandex.ru</a>
+                        </div>
+                    </div>
+                    <!--// header-skills__connection -->
+                </div>
+                <!--// header-skills__row -->
+            </div>
+        </div>
+        <!--// Скиллы -->
+
+    </header>
+    <!--// Шапка -->
+
+    <!-- Портфолио -->
+    <section class="section-portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="title-2">
+                <span class="border-grad">Портфолио</span>
+            </h2>
+            <div class="project__wrapper">
+                <div class="portfolio-works-toggle">
+                    <button class="portfolio-works-toggle__item control-active" data-filter="all">Все работы</button>
+                    <!-- <button class="portfolio-works-toggle__item" data-filter=".boots">Bootstrap</button>
+                    <button class="portfolio-works-toggle__item" data-filter=".wp">WordPress</button>
+                    <button class="portfolio-works-toggle__item" data-filter=".frontend">Frontend</button> -->
+                </div>
+                <div id="portfolio-projects">
+                    <!-- project-card -->
+                    <a href="http://f0516186.xsph.ru/forest-travel/main.html" class="project-card project-card--big mix boots frontend">
+                        <div class="project-card__img">
+                            <button>Смотреть проект</button>
+                            <img src="./img/project-card/forest2.jpg" width="555" alt="Forest" />
+                        </div>
+                        <div class="project-card__description">
+                            <h4>Верстка “Форест тревел”</h4>
+                            <p>Верстка многостраничного сайта.</p>
+                        </div>
+                    </a>
+                    <!--// project-card -->
+
+                    <!-- project-card -->
+                    <a href="http://f0516186.xsph.ru/unit-project/index.html" class="project-card project-card--big mix boots wp">
+                        <div class="project-card__img">
+                            <button>Смотреть проект</button>
+                            <img src="img/project-card/unit2.jpg" width="555" alt="unit" />
+                        </div>
+                        <div class="project-card__description">
+                            <h4>Верстка “Юнит”</h4>
+                            <p>Верстка одностраничного сайта.</p>
+                        </div>
+                    </a>
+                    <!--// project-card -->
+
+                    <!-- <a href="#" class="project-card hide-card mix boots frontend">
+                        <div class="project-card__img">
+                            <button>Смотреть проект</button>
+                            <img src="./img/project-card/card-img-blue.jpg" alt="unit" />
+                        </div>
+                        <div class="project-card__description">
+                            <h4>Верстка “Форест тревел”</h4>
+                            <p>Верстка многостраничного сайта.</p>
+                        </div>
+                    </a> -->
+
+                </div>
+                <button class="show-project-cards">Смотреть все работы</button>
+            </div>
+        </div>
+    </section>
+    <!--// Портфолио -->
+
+    <!-- Как я работаю -->
+
+     <section class="section-timeline ">
+        <div class="container">
+            <h2 class="title-2">
+                <span class="border-grad">Как я работаю</span>
+            </h2>
+            <div class="timeline-block">
+
+                <div class="timeline-block__item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="timeline-item__icon">
+                        <svg data-name="Layer 2" fill="#ffcf8f" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32">
+                            <path class="item-1"
+                                d="M16.34,27.89a.83.83,0,0,1-.68,0L3.15,22.28,1.52,23a.91.91,0,0,0,0,1.65L15.66,31a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.62-.73Zm0-7.94a.83.83,0,0,1-.68,0L3.31,14.41l-1.79.8a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.79-.8ZM30.48,9.07a.91.91,0,0,0,0-1.65L16.34,1.07a.83.83,0,0,0-.68,0L1.52,7.42a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="title-3 title-3--size">
+                        <span class="border-grad">Оцениваю макет</span>
+                    </h3>
+                    <div class="timeline-item__text">Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</div>
+                    <p class="timeline-item__time">Время: 2 - 4 часа</p>
+                </div>
+
+                <div class="timeline-block__item" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ff5b5b" viewBox="0 0 32 32">
+                            <g data-name="Layer 2">
+                                <path class="item-2"
+                                    d="M21.47,28.32l-4-2.21s0-.07,0-.11V25h-3v1s0,.07,0,.11l-4,2.21A1.5,1.5,0,0,0,12,30.94l4-2.23,4,2.23a1.5,1.5,0,0,0,1.46-2.62ZM3,21a2,2,0,0,0,2,2H27a2,2,0,0,0,2-2V7H3Zm4.94-6.06,3-3a1.5,1.5,0,0,1,2.12,0L17,15.88l4.94-4.94a1.5,1.5,0,0,1,2.12,2.12l-6,6a1.5,1.5,0,0,1-2.12,0L12,15.12l-1.94,1.94a1.5,1.5,0,1,1-2.12-2.12ZM30.72,1.74A1.36,1.36,0,0,0,29.51,1h-27a1.36,1.36,0,0,0-1.21.74,3,3,0,0,0,0,2.52A1.36,1.36,0,0,0,2.49,5h27a1.36,1.36,0,0,0,1.21-.74A3,3,0,0,0,30.72,1.74Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="title-3 title-3--size">
+                        <span class="border-grad">ТЗ, смета и график работ</span>
+                    </h3>
+                    <div class="timeline-item__text">Согласовываем техническое задание и график работ по проекту.
+                        Осмечиваю стоимость по этапу работы</div>
+                    <p class="timeline-item__time">Время: 2 - 4 часа</p>
+                </div>
+
+                <div class="timeline-block__item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ac74ee" viewBox="0 0 32 32">
+                            <g data-name="Layer 2">
+                                <path class="item-3"
+                                    d="M26.36,9.79l-3.21,2.38A9.16,9.16,0,1,1,16,8.66h0v2.06c0,.55.37.75.83.45l6.38-4.25a.62.62,0,0,0,0-1.11L16.79,1.55c-.46-.31-.83-.1-.83.45V4.66h0A13.22,13.22,0,1,0,26.36,9.79ZM12,18.29c-.58.52-1.2,1-1.8,1.49-1.46,1.21-1.09,2.34.47,2.41h3.94c1.44-.07,1.42-1.86-.07-1.86l-2.16,0c.27-.21.56-.42.83-.64,1.23-1,2.32-2.13,2.32-3.59a2.8,2.8,0,0,0-3.05-2.75c-3.1,0-3.91,3.67-2.08,3.67,1.39,0,.69-1.74,2-1.74a.85.85,0,0,1,.88.9A3,3,0,0,1,12,18.29ZM19.55,22a1.06,1.06,0,0,0,1.61-.14,1.36,1.36,0,0,0,.21-.83v-.55a1.77,1.77,0,0,0,.76-.1.78.78,0,0,0,.48-.74.81.81,0,0,0-.51-.77,1.93,1.93,0,0,0-.72-.09V14.7a1.19,1.19,0,0,0-1.27-1.3A1.24,1.24,0,0,0,19,14l-2.83,3.91c-.72,1-.75,2.58.6,2.58h2.47V21A1.22,1.22,0,0,0,19.55,22Zm-1.91-3.21L19.43,16c0,.45-.06.89-.09,1.34s0,.94-.05,1.42Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="title-3 title-3--size">
+                        <span class="border-grad">Вы держите руку на пульсе</span>
+                    </h3>
+                    <div class="timeline-item__text">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                        любое время можете видеть актуальное состояние проекта и задач.</div>
+                    <p class="timeline-item__time">Время: 2 часа</p>
+                </div>
+
+                <div class="timeline-block__item" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="timeline-item__icon">
+                        <svg data-name="Layer 2" fill="#51e5cb" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32">
+                            <path class="item-4"
+                                d="M9.63,13.76A2.4,2.4,0,1,0,7.17,9.64a18.24,18.24,0,0,0-5.62,5.62,2.4,2.4,0,0,0,0,2.47,18.24,18.24,0,0,0,5.62,5.62,2.4,2.4,0,1,0,2.47-4.12,14.12,14.12,0,0,1-3.08-2.73A12.4,12.4,0,0,1,9.63,13.76Zm20.82,1.51a18.24,18.24,0,0,0-5.62-5.62,2.4,2.4,0,1,0-2.47,4.12,14.12,14.12,0,0,1,3.08,2.73,12.4,12.4,0,0,1-3.08,2.76,2.4,2.4,0,1,0,2.47,4.12,18.24,18.24,0,0,0,5.62-5.62A2.4,2.4,0,0,0,30.46,15.26ZM16.55,5l-5,21a2,2,0,0,0,3.89.93l5-21A2,2,0,0,0,16.55,5Z" />
+                        </svg>
+                    </div>
+                    <h3 class="title-3 title-3--size">
+                        <span class="border-grad">Выполняю каждый этап</span>
+                    </h3>
+                    <div class="timeline-item__text">Поочередно выполняю каждый этап работы. Передаю результаты.
+                        Заказчик производит поэтапную оплату.</div>
+                    <p class="timeline-item__time">Время: 2 - 4 часа</p>
+                </div>
+
+                <div class="timeline-block__item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#7cc0ff" viewBox="0 0 32 32">
+                            <g data-name="Layer 2">
+                                <path class="item-5"
+                                    d="M30.84,10.75l-6.11-7A2.52,2.52,0,0,0,23.07,3h-14a2.55,2.55,0,0,0-1.67.75l-6.24,7a1.22,1.22,0,0,0,0,1.52L15.37,29.73a.78.78,0,0,0,1.26,0L30.87,12.27A1.23,1.23,0,0,0,30.84,10.75ZM10.31,13l1.89,8.09L5.59,13Zm6.63-7,1.43,4H13.63l1.43-4Zm1.67,7L16,24.18,13.39,13Zm3.08,0H26.4l-6.6,8.09Zm4.51-3H21.56L20.13,6h2.58ZM9.41,6h2.46l-1.43,4H5.85Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="title-3 title-3--size">
+                        <span class="border-grad">Финальное ревью проекта</span>
+                    </h3>
+                    <div class="timeline-item__text">Проект готов. Финальное ревью и полировка до идеального состояния.
+                        Передаю файлы проекта, заливаю сайт на хостинг заказчика.</div>
+                    <p class="timeline-item__time">Время: 2 - 4 часа</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// Как я работаю -->
+
+<!-- Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <!-- Заголовок -->
+            <h2 class="title-2">
+                <span class="border-grad">Контакты</span>
+            </h2>
+            
+            <div class="contacts__content">
+                <div class="contacts__content-img">
+                    <div class="wrapper__img">
+                        <img src="./img/contacts/Dots.png" alt="Dots">
+                        <img class="move-quot" src="./img/contacts/quotes.png" alt="quotes">
+                    </div>
+                </div>
+                <!-- contacts__info -->
+                <div class="contacts__info">
+
+                    <p class="contacts__info-text">
+                        Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом проектом —  напишите мне.
+                    </p>
+
+                        <ul class="contacts__block-list">
+                            <li><span>Email</span><a href="mailto:email@zuhrab.alibeckov@yandex.ru">zuhrab.alibeckov@yandex.ru</a></li>
+                            <li><span>VK</span><a href="https://vk.com/zukhrab96">Открыть профиль</a></li>
+                            <li><span>Телефон</span><a href="tel:+7(992)0006774">+7 (992) 000-67-74</a></li>
+                            <li><span>Адрес</span><p>Россия, Москва</p></li>
+                        </ul>
+
+                    <div class="social-block">
+                        <a class="icon__link"  href="https://github.com/zuhrab98">
+                            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                                    fill="#212121" />
+                            </svg>
+                        </a>
+
+                        <a class="icon__link" href="http://t.me/zuha_98">
+                            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" fill="#039be5" r="12" />
+                                <path
+                                    d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                                    fill="#fff" />
+                            </svg>
+                        </a>
+
+                        <a class="icon__link" href="https://vk.com/zukhrab96">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;"
+                                xml:space="preserve">
+                                <circle style="fill:#4D76A1;" cx="56.098" cy="56.098" r="56.098" />
+                                <g>
+                                    <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+                                c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+                                c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+                                c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+                                c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+                                c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+                                c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+                                c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+                                c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+                                c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+                                C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- // contacts__info -->
+                
+                <div class="form__wrapper">
+                        <!-- form -->
+                        <form class="form">
+                            <div class="form-item">
+                                <span class="face-placeholder">Ваш email</span>
+                                <input class="form-field" type="text" name="email">
+                            </div>
+
+                            <div class="form-item">
+                                <span class="face-placeholder">Тема сообщения</span>
+                                <input class="form-field" type="text" name="subject" required>
+                            </div> 
+    
+                            <div class="form-item">
+                                <span class="face-placeholder">Cообщения</span>
+                                <textarea class="form-field" name="message"></textarea>
+                            </div>
+
+                            <div class="form-item form-btn">
+                                <input type="submit" value="Отправить">
+                            </div>
+                            
+                        </form> 
+                        <!-- form -->
+                        <div id="answer"></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+<!--// Контакты -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                <span>&#169; 2021 — Алибеков Зухраб</span>
+                <p>
+                    Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.
+                    Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a
+                        href="https://webcademy.ru/">WebCademy.ru</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/jquery/jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/2c43377a60.js" crossorigin="anonymous"></script>
+    <script src="./libs/mixitup3/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

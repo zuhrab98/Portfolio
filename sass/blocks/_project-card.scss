@@ -1,0 +1,162 @@
+
+// .project__wrapper {
+//     margin-left: -15px;
+//     margin-right: -15px;
+// }
+
+#portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+    /* Tablet */
+    @media (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+
+.project-card {
+    width: 100%;
+    max-width: 360px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    color: $texr;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 45px;
+    }
+}
+
+.project-card__img img {
+    transition: all .8s ease-in-out;
+}
+
+.project-card:hover .project-card__img img{
+    transform: scale(1.2) rotate(5deg);
+}
+
+.project-card__img {
+    position: relative;
+    margin-bottom: 33px;
+    overflow: hidden;
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+    }
+
+    & button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -500%);
+        height: 52px;
+        background-color: $btnHover;
+        line-height: 52px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 26px;
+
+        font-family: 'Mplus 1p ExtraBold';
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        z-index: 2;
+        transition: .4s;
+    }
+}
+
+.project-card__img::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: rgba(241, 217, 96, .5);
+    z-index: 1;
+    transition: .4s;
+}
+
+
+.project-card:hover{
+
+    .project-card__img::after {
+        transform: translateX(0);
+    }
+
+    .project-card__img button {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.project-card__description {
+
+    h4 {
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: 'Mplus 1p Light';
+        font-size: 20px;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+        h4 {
+            font-size: 24px;
+            margin-bottom: 13px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+.project-card--big{
+
+    // & img {
+    //     height: 370px;
+    //     object-fit: cover;
+    // }
+    
+    @media (min-width: 1199px) {
+        max-width: 555px;
+
+        & h4 {
+            font-size: 32px;
+        }
+
+        & p {
+            font-size: 22px;
+        }
+    }
+}
