@@ -55,7 +55,7 @@
         margin-bottom: 25px;
     }
 
-    & button {
+    & span {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -98,7 +98,7 @@
         transform: translateX(0);
     }
 
-    .project-card__img button {
+    .project-card__img span {
         transform: translate(-50%, -50%);
     }
 }
